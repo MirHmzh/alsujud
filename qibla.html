@@ -80,9 +80,6 @@
 
     function init() {
       startBtn.addEventListener("click", startCompass);
-      if (isIOS) {
-        DeviceOrientationEvent.requestPermission();
-      }
       navigator.geolocation.getCurrentPosition(locationHandler);
 
       if (!isIOS) {
@@ -126,8 +123,10 @@
     function locationHandler(position) {
       const { latitude, longitude } = position.coords;
       pointDegree = calcDegreeToPoint(latitude, longitude);
-      console.log('allowed');
-      startCompass();
+      alert('allowed');
+      if (isIOS) {
+        DeviceOrientationEvent.requestPermission();
+      }
       if (pointDegree < 0) {
         pointDegree = pointDegree + 360;
       }
