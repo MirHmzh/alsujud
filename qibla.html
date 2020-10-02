@@ -124,6 +124,7 @@
       const { latitude, longitude } = position.coords;
       pointDegree = calcDegreeToPoint(latitude, longitude);
       console.log('allowed');
+      console.log(position);
       if (pointDegree < 0) {
         pointDegree = pointDegree + 360;
       }
