@@ -80,6 +80,7 @@
 
     function init() {
       startBtn.addEventListener("click", startCompass);
+      DeviceOrientationEvent.requestPermission();
       navigator.geolocation.getCurrentPosition(locationHandler);
 
       if (!isIOS) {
