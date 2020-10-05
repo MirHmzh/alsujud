@@ -33,68 +33,85 @@
 		width: 1em;
 	}
 	.compass {
-        position: relative;
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        margin: auto;
-      }
+    position: relative;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    margin: auto;
+  }
 
-      .compass > .arrow {
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-style: solid;
-        border-width: 30px 20px 0 20px;
-        border-color: red transparent transparent transparent;
-        z-index: 1;
-      }
+  .compass > .arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 30px 20px 0 20px;
+    border-color: red transparent transparent transparent;
+    z-index: 1;
+  }
 
-      .compass > .compass-circle,
-      .compass > .my-point {
-        position: absolute;
-        width: 90%;
-        height: 90%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: transform 0.1s ease-out;
-        background: url(<?= base_url('assets/img/compass.png') ?>)
-          center no-repeat;
-        background-size: contain;
-      }
+  .compass > .compass-circle,
+  .compass > .my-point {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    background: url(<?= base_url('assets/img/compass.png') ?>)
+      center no-repeat;
+    background-size: contain;
+  }
 
-      .compass > .my-point {
-        opacity: 0;
-        width: 20%;
-        height: 20%;
-        background: rgb(8, 223, 69);
-        border-radius: 50%;
-        transition: opacity 0.5s ease-out;
-      }
+  .compass > .my-point {
+    opacity: 0;
+    width: 20%;
+    height: 20%;
+    background: rgb(8, 223, 69);
+    border-radius: 50%;
+    transition: opacity 0.5s ease-out;
+  }
 
-      .start-btn {
-        margin-bottom: auto;
-      }
+  .start-btn {
+    text-align: center;
+    background-color: #e2e797;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+  }
+
+  .compass-wrapper{
+    margin-top: 5em;
+  }
+
+  #compass-btn-wrapper{
+    text-align: center;
+    margin-top: 1em;
+  }
 </style>
 <body>
 	<div class="row">
 		<div class="col-12">
-			<img src="<?= base_url('assets/img/back.png') ?>" id="back" alt="">
+			<a href="<?= base_url('main') ?>" title="">
+       <img src="<?= base_url('assets/img/back.png') ?>" id="back" alt="">
+      </a>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-12">
-			<div class="compass">
-		    	<div class="arrow"></div>
+			<div class="compass compass-wrapper">
+		    	<!-- <div class="arrow"></div> -->
 		    	<div class="compass-circle"></div>
 		    	<div class="my-point"></div>
 		    </div>
-		    <button class="start-btn">Start compass</button>
+		    <div class="row">
+          <div class="col-12" id="compass-btn-wrapper">
+            <button class="start-btn">Cari Kiblat</button>
+          </div>
+        </div>
 		</div>
 	</div>
 </body>
