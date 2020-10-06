@@ -158,6 +158,11 @@ class Main extends CI_Controller {
 		$this->load->view('detil_juz_amma', $data);
 	}
 
+	function generator()
+	{
+		$this->load->view('generator');
+	}
+
 }
 
 /* End of file main.php */
