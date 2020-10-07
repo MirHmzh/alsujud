@@ -54,7 +54,7 @@
 <body>
 	<div class="row">
 		<div class="col-12">
-			<a href="<?= base_url('main') ?>" title="">
+			<a href="<?= base_url($token) ?>" title="">
 				<img src="<?= base_url('assets/img/back.png') ?>" id="back" style="width: 1em" alt="">
 			</a>
 		</div>
@@ -62,7 +62,7 @@
 	<div class="menu-wrapper">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/1') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/1/'.$token) ?>">
 					<div class="menu-item">
 						Doa Sebelum Wudhu
 					</div>
@@ -71,7 +71,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/2') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/2/'.$token) ?>">
 					<div class="menu-item">
 						Doa Sesudah Wudhu
 					</div>
@@ -80,7 +80,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/3') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/3/'.$token) ?>">
 					<div class="menu-item">
 						Bacaan Ketika Mendengar Adzan
 					</div>
@@ -89,7 +89,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/4') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/4/'.$token) ?>">
 					<div class="menu-item">
 						Doa Iftitah
 					</div>
@@ -98,7 +98,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/5') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/5/'.$token) ?>">
 					<div class="menu-item">
 						Doa Ruku'
 					</div>
@@ -107,7 +107,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/6') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/6/'.$token) ?>">
 					<div class="menu-item">
 						Doa I'tidal
 					</div>
@@ -116,7 +116,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/7') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/7/'.$token) ?>">
 					<div class="menu-item">
 						Doa Sujud
 					</div>
@@ -125,7 +125,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/8') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/8/'.$token) ?>">
 					<div class="menu-item">
 						Doa Diantara Dua Sujud
 					</div>
@@ -134,7 +134,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/9') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/9/'.$token) ?>">
 					<div class="menu-item">
 						Doa Sujud Tilawah
 					</div>
@@ -143,7 +143,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('main/detil_bacaan_sholat/10') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/1/0.$token') ?>">
 					<div class="menu-item">
 						Doa Tasyahud Akhir
 					</div>

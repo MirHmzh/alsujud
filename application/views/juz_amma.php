@@ -66,13 +66,13 @@
 <body>
 	<div class="row navbar">
 		<div class="col-12">
-			<a href="<?= base_url('main') ?>" title="">
+			<a href="<?= base_url($token) ?>" title="">
 				<img src="<?= base_url('assets/img/back.png') ?>" id="back" style="width: 1em" alt="">
 			</a>
 		</div>
 	</div>
 	<div class="menu-wrapper">
-			<a href="<?= base_url('main/detil_juz_amma/114') ?>">
+			<a href="<?= base_url('detil_juz_amma/114/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -89,7 +89,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/113') ?>">
+			<a href="<?= base_url('detil_juz_amma/113/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -106,7 +106,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/112') ?>">
+			<a href="<?= base_url('detil_juz_amma/112/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/111') ?>">
+			<a href="<?= base_url('detil_juz_amma/111/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -140,7 +140,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/110') ?>">
+			<a href="<?= base_url('detil_juz_amma/110/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -157,7 +157,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/109') ?>">
+			<a href="<?= base_url('detil_juz_amma/109/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -174,7 +174,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/108') ?>">
+			<a href="<?= base_url('detil_juz_amma/108/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -191,7 +191,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/107') ?>">
+			<a href="<?= base_url('detil_juz_amma/107/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -208,7 +208,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/106') ?>">
+			<a href="<?= base_url('detil_juz_amma/106/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -225,7 +225,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/105') ?>">
+			<a href="<?= base_url('detil_juz_amma/105/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -242,7 +242,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/104') ?>">
+			<a href="<?= base_url('detil_juz_amma/104/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -259,7 +259,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/103') ?>">
+			<a href="<?= base_url('detil_juz_amma/103/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -276,7 +276,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/102') ?>">
+			<a href="<?= base_url('detil_juz_amma/102/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -293,7 +293,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/101') ?>">
+			<a href="<?= base_url('detil_juz_amma/101/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -310,7 +310,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/100') ?>">
+			<a href="<?= base_url('detil_juz_amma/100/'.$token) ?>">
 					<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -327,7 +327,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/99	') ?>">
+			<a href="<?= base_url('detil_juz_amma/99/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -344,7 +344,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/98	') ?>">
+			<a href="<?= base_url('detil_juz_amma/98/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -361,7 +361,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/97	') ?>">
+			<a href="<?= base_url('detil_juz_amma/97/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -378,7 +378,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/96	') ?>">
+			<a href="<?= base_url('detil_juz_amma/96/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -395,7 +395,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/95	') ?>">
+			<a href="<?= base_url('detil_juz_amma/95/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -412,7 +412,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/94	') ?>">
+			<a href="<?= base_url('detil_juz_amma/94/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -429,7 +429,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/93	') ?>">
+			<a href="<?= base_url('detil_juz_amma/93/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -446,7 +446,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/92	') ?>">
+			<a href="<?= base_url('detil_juz_amma/92/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -463,7 +463,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/91	') ?>">
+			<a href="<?= base_url('detil_juz_amma/91/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -480,7 +480,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/90	') ?>">
+			<a href="<?= base_url('detil_juz_amma/90/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -498,7 +498,7 @@
 				</div>
 			</a>
 
-			<a href="<?= base_url('main/detil_juz_amma/89	') ?>">
+			<a href="<?= base_url('detil_juz_amma/89/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -515,7 +515,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/88	') ?>">
+			<a href="<?= base_url('detil_juz_amma/88/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -532,7 +532,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/87	') ?>">
+			<a href="<?= base_url('detil_juz_amma/87/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -549,7 +549,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/86	') ?>">
+			<a href="<?= base_url('detil_juz_amma/86/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -566,7 +566,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/85	') ?>">
+			<a href="<?= base_url('detil_juz_amma/85/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -583,7 +583,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/84	') ?>">
+			<a href="<?= base_url('detil_juz_amma/84/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -600,7 +600,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/83	') ?>">
+			<a href="<?= base_url('detil_juz_amma/83/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -618,7 +618,7 @@
 				</div>
 			</a>
 
-			<a href="<?= base_url('main/detil_juz_amma/82	') ?>">
+			<a href="<?= base_url('detil_juz_amma/82/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -635,7 +635,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/81	') ?>">
+			<a href="<?= base_url('detil_juz_amma/81/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -652,7 +652,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/80	') ?>">
+			<a href="<?= base_url('detil_juz_amma/80/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -669,7 +669,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/79	') ?>">
+			<a href="<?= base_url('detil_juz_amma/79/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">
@@ -686,7 +686,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="<?= base_url('main/detil_juz_amma/78	') ?>">
+			<a href="<?= base_url('detil_juz_amma/78/'.$token) ?>">
 				<div class="row justify-content-center">
 					<div class="col-12">
 						<div class="menu-item">

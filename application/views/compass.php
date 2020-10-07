@@ -95,7 +95,7 @@
 <body>
 	<div class="row">
 		<div class="col-12">
-			<a href="<?= base_url('main') ?>" title="">
+			<a href="<?= base_url($token) ?>" title="">
        <img src="<?= base_url('assets/img/back.png') ?>" id="back" alt="">
       </a>
 		</div>

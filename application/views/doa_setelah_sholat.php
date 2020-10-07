@@ -60,7 +60,7 @@
 <body>
 	<div class="row">
 		<div class="col-12">
-			<a href="<?= base_url('main') ?>" title="">
+			<a href="<?= base_url($token) ?>" title="">
 				<img src="<?= base_url('assets/img/back.png') ?>" id="back" style="width: 1em" alt="">
 			</a>
 		</div>
@@ -73,7 +73,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="<?= base_url('main/detil_setelah_sholat/1') ?>">
+		<a href="<?= base_url('detil_setelah_sholat/1/'.$token) ?>">
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="menu-item">
@@ -89,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="<?= base_url('main/detil_setelah_sholat/2') ?>">
+		<a href="<?= base_url('detil_setelah_sholat/2/'.$token) ?>">
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="menu-item">

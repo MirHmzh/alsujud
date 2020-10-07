@@ -29,6 +29,9 @@
 		padding: 0.5em 0em;
 		margin: 0.2em 2em;
 	}
+	#play{
+		float: right;
+	}
 	.navbar{
 		position: sticky;
 		top: 0;
@@ -54,12 +57,17 @@
 <body>
 	<div class="row navbar">
 		<div class="col-6">
-			<a href="<?= base_url('main/setelah_sholat') ?>" title="">
+			<a href="<?= base_url('setelah_sholat/'.$token) ?>" title="">
 				<img src="<?= base_url('assets/img/back.png') ?>" id="back" style="width: 1em" alt="">
 			</a>
 		</div>
-		<div class="col-6" id="play">
-			<img src="<?= base_url('assets/img/volume.png') ?>" style="width: 1em;" alt="">
+		<div class="col-6">
+			<span id="pause" style="display: none;">
+				<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">
+			</span>
+			<span id="play">
+				<img src="<?= base_url('assets/img/volume.png') ?>" style="width: 1em;" alt="">
+			</span>
 		</div>
 	</div>
 	<div class="content-wrapper">
@@ -86,4 +94,51 @@
 </body>
 <script src="<?= base_url('assets/js/jquery.min.js') ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?= base_url('assets/js/bootstrap.min.js') ?>" type="text/javascript" charset="utf-8"></script>
+<script src="<?= base_url('assets/js/howler.min.js') ?>" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8" async defer>
+	let sound = new Howl({
+	        src: ['<?= $sound ?>'],
+	        format: 'mp3',
+	        preload: true,
+	        onend: () => {
+	        	$('#pause').hide();
+				$('#play').html('<img src="<?= base_url('assets/img/volume.png') ?>" style="width: 1em;" alt="">');
+				play = false;
+	        },
+	    });
+	let soundId;
+	let seek;
+	let play = false;
+	$('#pause').click(() => {
+		if (sound.playing()) {
+			$('#pause').html('<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">');
+	    	sound.pause();
+			seek = sound.seek(soundId);
+		}else{
+			$('#pause').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
+			soundId = sound.play();
+	    	sound.seek(seek, soundId);
+		}
+		// return sound.playing() ? sound.pause() : autoplay(order, audio);
+	});
+	$('#play').click(() => {
+		if (play) {
+			$('#pause').hide();
+			$('#play').html('<img src="<?= base_url('assets/img/volume.png') ?>" style="width: 1em;" alt="">');
+			sound.stop();
+			play = false;
+		}
+		else{
+			console.log(soundId);
+			console.log(seek);
+			console.log(play);
+			soundId = sound.play();
+			sound.seek(0, soundId);
+			play = true;
+			$('#pause').show();
+			$('#play').html('<img src="<?= base_url('assets/img/stop.png') ?>" style="width: 1em;" alt="">');
+			$('#pause').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
+		}
+	});
+</script>
 </html>

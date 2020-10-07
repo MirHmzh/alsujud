@@ -26,14 +26,8 @@
 		text-align: center;
 		background-color: #e2e797;
 		border-radius: 0.5em;
-		padding: 0.5em 0em;
-		margin: 0.2em 2em;
-	}
-
-	.menu-logo{
-		text-align: center;
-		padding: 0.5em 0em;
-		margin: 0.2em 2em;
+		padding: 1em 0em;
+		margin: 0.5em 6em;
 	}
 	a{
 		text-decoration: none;
@@ -58,46 +52,14 @@
 	}
 </style>
 <body>
-	<div class="row">
-		<div class="col-12">
-			<a href="<?= base_url($token) ?>" title="">
-				<img src="<?= base_url('assets/img/back.png') ?>" id="back" style="width: 1em" alt="">
-			</a>
-		</div>
-	</div>
 	<div class="menu-wrapper">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<div class="menu-logo">
-					<img src="<?= base_url('assets/img/compass.png') ?>" alt="">
+				<div class="menu-item">
+					Beli Sajadahnyaaaa
 				</div>
 			</div>
 		</div>
-		<a href="<?= base_url('detil_setelah_sholat/1/'.$token) ?>">
-			<div class="row justify-content-center">
-				<div class="col-12">
-					<div class="menu-item">
-						Dzikir Pagi dan Petang
-					</div>
-				</div>
-			</div>
-		</a>
-		<div class="row justify-content-center">
-			<div class="col-12">
-				<div class="menu-logo">
-					<img src="<?= base_url('assets/img/compass.png') ?>" alt="">
-				</div>
-			</div>
-		</div>
-		<a href="<?= base_url('detil_setelah_sholat/2/'.$token) ?>">
-			<div class="row justify-content-center">
-				<div class="col-12">
-					<div class="menu-item">
-						Dzikir Menjelang Tidur
-					</div>
-				</div>
-			</div>
-		</a>
 	</div>
 </body>
 <script src="<?= base_url('assets/js/jquery.min.js') ?>" type="text/javascript" charset="utf-8"></script>

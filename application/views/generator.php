@@ -100,7 +100,7 @@
 <body>
 	<!-- <div class="row navbar">
 		<div class="col-6">
-			<a href="<?= base_url('main/juz_amma') ?>" title="">
+			<a href="<?= base_url('juz_amma') ?>" title="">
 				<img src="<?= base_url('assets/img/back.png') ?>" id="back" style="width: 1em" alt="">
 			</a>
 		</div>
