@@ -54,72 +54,76 @@ class Main extends CI_Controller {
 	{
 		switch ($this->id) {
 			case 1:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'نَوَيْتُ الْوُضُوْءَ لِرَفْعِ الْحَدَثِ اْلاَصْغَرِ فَرْضًا ِللهِ تَعَالَى';
+				$this->data['arti'] = 'Saya niat berwudhu untuk menghilangkan hadast kecil fardu (wajib) karena Allah ta’ala';
+				$this->data['judul'] = 'Doa Sebelum Wudhu';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 2:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'اَشْهَدُاَنْ لَااِلٰهَ اِلَّا اللّٰهُ وَحْدَهُ لَاشَرِيْكَ لَهُ. وَاَشْهَدُ اَنَّ مُحَمَّدًاعَبْدُهُ وَرَسُوْلُهُ. اَللّٰهُمَّ اجْعَلْنِىْ مِنَاالتَّوَّابِيْنَ، وَجْعَلْنِيْ مِنَ الْمُتَطَهِّرِيْنَ، وَجْعَلْنِىْ مِنْ عِبَادِكَ الصَّالِحِيْنَ';
+				$this->data['arti'] = 'Saya bersaksi tiada Tuhan melainkan Allah yang esa , tiada sekutu bagi-Nya . Dan saya bersaksi bahwa nabi Muhammad adalah hamba-Nya dan utusan-Nya . Ya Allah jadikanlah saya orang yang ahli taubat , dan jadikanlah saya orang yang suci , dan jadikanlah saya dari golongan hamba-hamba Mu yang shaleh.';
+				$this->data['judul'] = 'Doa Sesudah Wudhu';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 3:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'للهُمَّ رَبَّ هذِهِ الدَّعْوَةِ التَّآمَّةِ، وَالصَّلاَةِ الْقَآئِمَةِ، آتِ مُحَمَّدَانِ الْوَسِيْلَةَ وَالْفَضِيْلَةَ وَالشَّرَفَ وَالدَّرَجَةَ الْعَالِيَةَ الرَّفِيْعَةَ وَابْعَثْهُ مَقَامًامَحْمُوْدَانِ الَّذِىْ وَعَدْتَهُ اِنَّكَ لاَتُخْلِفُ الْمِيْعَادَ';
+				$this->data['arti'] = 'Ya Allah, Tuhan pemilik panggilan yang sempurna (adzan) ini dan shalat (wajib) yang didirikan. Berilah al-wasilah (derajat di surga), dan al-fadhilah (keutamaan) kepada nabi Muhammad. Dan bangkitkanlah beliau sehingga bisa menempati kedudukan terpuji yang Engkau janjikan';
+				$this->data['judul'] = 'Doa Setelah Adzan';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 4:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'اللهُ اَكْبَرُ كَبِرًا وَالْحَمْدُ لِلهِ كَثِيْرًا وَسُبْحَانَ اللهِ بُكْرَةً وَاَصِيْلًا . اِنِّى وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَالسَّمَاوَاتِ وَالْااَرْضَ حَنِيْفًا مُسْلِمًا وَمَا اَنَا مِنَ الْمُشْرِكِيْنَ . اِنَّ صَلَاتِيْ وَنُسُكِيْ وَمَحْيَايَ وَمَمَاتِيْ لِلهِ رَبِّ الْعَا لَمِيْنَ . لاَ شَرِيْكَ لَهُ وَبِذَ لِكَ اُمِرْتُ وَاَنَ مِنَ الْمُسْلِمِيْنَ';
+				$this->data['arti'] = 'Allah Maha Besar dengan sebesar-besarnya, segala puji bagi Allah dengan pujian yang banyak. Maha Suci Allah pada waktu pagi dan petang.
+					<br>
+					Sesungguhnya aku hadapkan wajahku kepada Allah yang telah menciptakan langit dan bumi dengan segenap kepatuhan atau dalam keadaan tunduk, dan aku bukanlah dari golongan orang-orang yang menyekutukan-Nya.
+					<br>
+					Sesungguhnya sholatku, ibadahku, hidup dan matiku hanyalah untuk Allah Tuhan Semesta Alam, yang tidak ada sekutu bagi-Nya. Dengan yang demikian itulah aku diperintahkan. Dan aku adalah termasuk orang-orang muslim (Orang-orang yang berserah diri).';
+				$this->data['judul'] = 'Doa Iftitah';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 5:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'سُبْحَانَ رَبِّىَ الْعَظِيمِ وَبِحَمْدِهِ';
+				$this->data['arti'] = 'Mahasuci Tuhanku yang Mahaagung dan segala puji bagiNya';
+				$this->data['judul'] = "Doa Ruku'";
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 6:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'رَبَّنَا وَلَكَ الْحَمْدُ مِلْءَ السَّمَاوَاتِ وَمِلْءَ الْأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ';
+				$this->data['arti'] = 'Wahai Tuhan kami, bagiMu segala puji, sepenuh langit dan sepenuh bumi, dan sepenuh apa yang Engkau inginkan dari sesuatu setelahnya';
+				$this->data['judul'] = "Doa I'tidal";
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 7:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'سُبْحَانَ رَبِّىَ الْأَعْلَى وَبِحَمْدِهِ';
+				$this->data['arti'] = 'Mahasuci Tuhanku yang Mahatinggi dan segala puji bagiNya';
+				$this->data['judul'] = 'Doa Sujud';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 8:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'رَبِّ اغْفِرْ لِيْ وَارْحَمْنِيْ وَاجْبُرْنِيْ وَارفَعْنِيْ وَارْزُقْنِيْ وَاهْدِنِيْ وَعَافِنِيْ وَاعْفُ عَنِّيْ';
+				$this->data['arti'] = 'Ya Tuhanku, ampunilah aku, kasihanilah aku, benarkanlah aku, angkatlah derajatku, karuniakanlah aku rezeki, sehatkanlah aku, dan maafkanlah aku';
+				$this->data['judul'] = 'Doa Diantara Dua Sujud';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 9:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'سَجَدَ وَجْهِى لِلَّذِى خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ';
+				$this->data['arti'] = 'Wajahku bersujud kepada Dzat yang menciptakannya, yang membentuknya, dan yang memberi pendengaran dan penglihatan, Maha berkah Allah sebaik-baiknya pencipta';
+				$this->data['judul'] = 'Doa Sujud Tilawah';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 10:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِىُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ أَللهُمَّ صَلِّ عَلى سَيِّدِنَا مُحَمَّدٍ ، وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ ، كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ ، وبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ ، وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ ، كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ ، وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ ، إِنَّكَ حَمِيدٌ مَجِيدٌ';
+				$this->data['arti'] = 'Segala ucapan selamat, keberkahan, shalawat, dan kebaikan adalah bagi Allah. Mudah-mudahan kesejahteraan dilimpahkan kepadamu wahai Nabi beserta rahmat Allah dan barakah-Nya. Mudah-mudahan kesejahteraan dilimpahkan pula kepada kami dan kepada seluruh hamba Allah yang shalih. Aku bersaksi bahwa tidak ada sesembahan yang berhak disembah melainkan Allah, dan aku bersaksi bahwa Muhammad itu adalah utusan Allah. Ya Allah aku sampai shalawat kepada junjungan kita Nabi Muhammad, serta kepada keluarganya. Sebagaimana Engkau sampaikan shalawat kepada Nabi Ibrahim As., serta kepada para keluarganya. Dan, berikanlah keberkahan kepada junjungan kita Nabi Muhammad, serta kepada keluarga. Sebagaimana, Engkau telah berkahi kepada junjungan kita Nabi Ibrahim, serta keberkahan yang dilimpahkan kepada keluarga Nabi Ibrahim. Di seluruh alam raya ini, Engkaulah Yang Maha Terpuji lagi Maha Kekal.';
+				$this->data['judul'] = 'Doa Tasyahud Akhir';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 			default:
@@ -136,16 +140,16 @@ class Main extends CI_Controller {
 	{
 		switch ($this->id) {
 			case 1:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'اللَّهُمَّ اغْفِرْ لِى وَلِوَ الِدَىَّ وَارْ حَمْهُمَا كَمَا رَبَّيَا نِى صَغِيْرًا';
+				$this->data['arti'] = 'a Allah, ampunilah semua dosa-dosaku dan dosa-dosa kedua orang tuaku, serta berbelaskasihlah kepada mereka berdua seperti mereka berbelas kasih kepada diriku di waktu aku kecil.';
+				$this->data['judul'] = 'Doa Kedua Orang Tua';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
 			case 2:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'رَبَّنَا آَتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآَخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ';
+				$this->data['arti'] = 'Ya Rabb kami, limpahkanlah kepada kami kebaikan di dunia dan kebaikan di akhirat serta peliharalah kami dari siksa neraka';
+				$this->data['judul'] = 'Doa Selamat Dunia Akhirat';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 
@@ -170,9 +174,9 @@ class Main extends CI_Controller {
 				break;
 
 			case 2:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'بِسْمِكَ اللّهُمَّ اَحْيَا وَ بِسْمِكَ اَمُوْتُ';
+				$this->data['arti'] = 'Dengan nama-Mu ya Allah aku hidup, dan dengan nama-Mu aku mati';
+				$this->data['judul'] = 'Doa Sebelum Tidur';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 

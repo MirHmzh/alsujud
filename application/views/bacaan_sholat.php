@@ -143,7 +143,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<a href="<?= base_url('detil_bacaan_sholat/1/0.$token') ?>">
+				<a href="<?= base_url('detil_bacaan_sholat/10/'.$token) ?>">
 					<div class="menu-item">
 						Doa Tasyahud Akhir
 					</div>
