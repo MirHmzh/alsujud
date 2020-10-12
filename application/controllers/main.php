@@ -141,7 +141,7 @@ class Main extends CI_Controller {
 		switch ($this->id) {
 			case 1:
 				$this->data['lafadz'] = 'اللَّهُمَّ اغْفِرْ لِى وَلِوَ الِدَىَّ وَارْ حَمْهُمَا كَمَا رَبَّيَا نِى صَغِيْرًا';
-				$this->data['arti'] = 'a Allah, ampunilah semua dosa-dosaku dan dosa-dosa kedua orang tuaku, serta berbelaskasihlah kepada mereka berdua seperti mereka berbelas kasih kepada diriku di waktu aku kecil.';
+				$this->data['arti'] = 'Ya Allah, ampunilah semua dosa-dosaku dan dosa-dosa kedua orang tuaku, serta berbelaskasihlah kepada mereka berdua seperti mereka berbelas kasih kepada diriku di waktu aku kecil.';
 				$this->data['judul'] = 'Doa Kedua Orang Tua';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
@@ -167,9 +167,9 @@ class Main extends CI_Controller {
 	{
 		switch ($this->id) {
 			case 1:
-				$this->data['lafadz'] = '';
-				$this->data['arti'] = '';
-				$this->data['judul'] = '';
+				$this->data['lafadz'] = 'أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِيْ هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوْذُ بِكَ مِنْ شَرِّ مَا فِيْ هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوْذُ بِكَ مِنَ الْكَسَلِ وَسُوْءِ الْكِبَرِ، رَبِّ أَعُوْذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ';
+				$this->data['arti'] = '“Kami telah memasuki waktu pagi dan kerajaan hanya milik Allah, segala puji hanya milik Allah. Tidak ada ilah yang berhak diibadahi dengan benar kecuali Allah Yang Maha Esa, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan bagi-Nya pujian. Dia-lah Yang Mahakuasa atas segala sesuatu. Wahai Rabb, aku mohon kepada-Mu kebaikan di hari ini dan kebaikan sesudahnya. Aku berlindung kepada-Mu dari kejahatan hari ini dan kejahatan sesudahnya. Wahai Rabb, aku berlindung kepada-Mu dari kemalasan dan kejelekan"';
+				$this->data['judul'] = 'Dzikir Pagi & Petang';
 				$this->data['sound'] = base_url('assets/audio/alfatihah.mp3');
 				break;
 

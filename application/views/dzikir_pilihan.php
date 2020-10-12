@@ -73,7 +73,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="<?= base_url('detil_setelah_sholat/1/'.$token) ?>">
+		<a href="<?= base_url('detil_dzikir/1/'.$token) ?>">
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="menu-item">
@@ -89,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="<?= base_url('detil_setelah_sholat/2/'.$token) ?>">
+		<a href="<?= base_url('detil_dzikir/2/'.$token) ?>">
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="menu-item">
