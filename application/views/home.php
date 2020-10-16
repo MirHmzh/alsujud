@@ -113,7 +113,7 @@
 		opacity: 23%;
 	}
 	.flower-wrapper div img{
-		width: 60%;
+		width: 8em;
 	}
 	.flower-right{
 		transform: rotate(180deg);
