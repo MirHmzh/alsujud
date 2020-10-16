@@ -120,12 +120,14 @@
 		position: relative;
 		right: 10%;
 		top: 1em;
+		display: inline-block;
 	}
 	.flower-left{
 		transform: rotateX(180deg);
 		position: relative;
 		left: 10%;
 		top: 1em;
+		display: inline-block;
 	}
 	.footer-wrapper{
 		padding: 0.3em 0em 0.3em 0em;
