@@ -121,6 +121,7 @@
 		right: 10%;
 		top: 1em;
 		display: inline-block;
+		float: right;
 	}
 	.flower-left{
 		transform: rotateX(180deg);
