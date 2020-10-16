@@ -54,8 +54,13 @@
 		text-decoration: none;
 		color: #313e28;
 	}
+	.splash{
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+	}
 	.brand{
-		position: relative;
+		position: fixed;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -63,7 +68,7 @@
 	.brand-splash{
 		font-family: Lora;
 		color: #e2e797;
-		position: relative;
+		position: fixed;
 		top: 90%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -74,6 +79,7 @@
 	}
 	.content{
 		overflow: hidden;
+		display: none;
 	}
 	#cloud-left{
 		position: absolute;
@@ -149,14 +155,14 @@
 	}
 </style>
 <body>
-	<!-- <div class="splash">
+	<div class="splash">
 		<div class="brand">
 			<img src="<?= base_url('assets/img/logo.png') ?>">
 		</div>
 		<div class="brand-splash">
 			alsujud.com
 		</div>
-	</div> -->
+	</div>
 	<div class="content">
 		<div id="cloud-left">
 			<img src="<?= base_url('assets/img/cloud.png') ?>" alt="">
@@ -249,12 +255,12 @@
 <script src="<?= base_url('assets/js/jquery.min.js') ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?= base_url('assets/js/bootstrap.min.js') ?>" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-	// $(document).ready(function() {
-	// 	setTimeout(() => {
-	// 		$('.splash').fadeOut(500, () => {
-	// 			$('.content').fadeIn(0);
-	// 		});
-	// 	}, 1000)
-	// });
+	$(document).ready(function() {
+		setTimeout(() => {
+			$('.splash').fadeOut(500, () => {
+				$('.content').fadeIn(0);
+			});
+		}, 1000)
+	});
 </script>
 </html>
