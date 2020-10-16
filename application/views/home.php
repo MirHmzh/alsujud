@@ -31,7 +31,7 @@
 		background-color: #fff;
 		border-radius: 0.5em;
 		padding: 1em 0em;
-		margin: 0.5em 3em;
+		margin: 0em 3em;
 	}
 	a{
 		text-decoration: none;
@@ -55,7 +55,7 @@
 		color: #313e28;
 	}
 	.brand{
-		position: fixed;
+		position: relative;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -63,7 +63,7 @@
 	.brand-splash{
 		font-family: Lora;
 		color: #e2e797;
-		position: fixed;
+		position: relative;
 		top: 90%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -73,7 +73,7 @@
 		font-weight: 900;
 	}
 	.content{
-		/*display: none;*/
+		overflow: hidden;
 	}
 	#cloud-left{
 		position: absolute;
@@ -91,19 +91,19 @@
 	}
 	.menu-wrapper{
 		background-color: #e2cab3;
-		position: fixed;
+		position: relative;
 		width: 101%;
 		left: -0.5%;
 		border-radius: 11% 11% 10% 10% / 11% 11% 0% 0%;
-		padding: 4em 0em;
+		padding: 1em 0em 2em 0em;
 		/*display: none;*/
 	}
 	.menu-icon{
 		background-color: #313e28;
-		position: fixed;
-		padding: 0.8em 0.6em;
-		margin-top: -0.5em;
+		position: relative;
+		padding: 1.4em 1em;
 		left: 10%;
+		top: 40%;
 		border-radius: 0.3em;
 	}
 	.menu-icon img{
@@ -111,32 +111,29 @@
 	}
 	.flower-wrapper{
 		opacity: 23%;
-		height: 3vh;
 	}
 	.flower-wrapper div img{
-		width: 30%;
+		width: 60%;
 	}
 	.flower-right{
 		transform: rotate(180deg);
-		position: fixed;
+		position: relative;
 		right: 10%;
+		top: 1em;
 	}
 	.flower-left{
 		transform: rotateX(180deg);
-		position: fixed;
+		position: relative;
 		left: 10%;
-	}
-	.menu-item-wrapper{
-		margin-top: 1em;
+		top: 1em;
 	}
 	.footer-wrapper{
-		margin-top: 65vh;
-		padding: 1.9em 0em 0.3em 0em;
+		padding: 0.3em 0em 0.3em 0em;
 		background-color: #fff;
 	}
-	.brand-footer span{
-		position: fixed;
-		bottom: 2em;
+	.brand-footer div{
+		position: relative;
+		bottom: -2em;
 	}
 	.compass-icon{
 		text-align: right;
@@ -169,11 +166,11 @@
 				<hr class="logo-spacer">
 			</div>
 		</div>
-		<div class="flower-wrapper">
-			<div class="flower-left">
+		<div class="row flower-wrapper">
+			<div class="col-6 flower-left">
 				<img src="<?= base_url('assets/img/flower.png') ?>" alt="">
 			</div>
-			<div class="flower-right">
+			<div class="col-6 flower-right">
 				<img src="<?= base_url('assets/img/flower.png') ?>" alt="">
 			</div>
 			<div class="clear"></div>
@@ -181,9 +178,9 @@
 		<div class="menu-wrapper">
 			<div class="row justify-content-center menu-item-wrapper">
 				<div class="col-12">
-					<div class="menu-icon">
+					<span class="menu-icon">
 						<img src="<?= base_url('assets/img/man.png') ?>">
-					</div>
+					</span>
 					<a href="<?= base_url('bacaan_sholat/'.$token) ?>" title="">
 						<div class="menu-item">
 							Bacaan Sholat
@@ -193,9 +190,9 @@
 			</div>
 			<div class="row justify-content-center menu-item-wrapper">
 				<div class="col-12">
-					<div class="menu-icon">
+					<span class="menu-icon">
 						<img src="<?= base_url('assets/img/women.png') ?>">
-					</div>
+					</span>
 					<a href="<?= base_url('setelah_sholat/'.$token) ?>" title="">
 						<div class="menu-item">
 							Doa Setelah Sholat
@@ -205,9 +202,9 @@
 			</div>
 			<div class="row justify-content-center menu-item-wrapper">
 				<div class="col-12">
-					<div class="menu-icon">
+					<span class="menu-icon">
 						<img src="<?= base_url('assets/img/marble_cream.png') ?>">
-					</div>
+					</span>
 					<a href="<?= base_url('dzikir_pilihan/'.$token) ?>" title="">
 						<div class="menu-item">
 							Dzikir Pilihan
@@ -217,9 +214,9 @@
 			</div>
 			<div class="row justify-content-center menu-item-wrapper">
 				<div class="col-12">
-					<div class="menu-icon">
+					<span class="menu-icon">
 						<img src="<?= base_url('assets/img/holy_cream.png') ?>">
-					</div>
+					</span>
 					<a href="<?= base_url('juz_amma/'.$token) ?>" title="">
 						<div class="menu-item">
 							Juz Amma
@@ -231,7 +228,7 @@
 		<div class="footer-wrapper">
 			<div class="row">
 				<div class="col-6 brand-footer">
-					<span>alsujud.com</span>
+					<div>alsujud.com</div>
 				</div>
 				<div class="col-6 compass-icon">
 					<span><img src="<?= base_url('assets/img/compass.png') ?>"></span>
