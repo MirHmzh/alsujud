@@ -136,13 +136,16 @@
 	}
 	.brand-footer div{
 		position: relative;
-		bottom: -2em;
+		bottom: -3em;
 	}
 	.compass-icon{
 		text-align: right;
 	}
 	.compass-icon img{
-		width: 30%;
+		width: 3em;
+	}
+	.footer-spacer{
+		height: 5em;
 	}
 </style>
 <body>
@@ -237,6 +240,9 @@
 					<span><img src="<?= base_url('assets/img/compass.png') ?>"></span>
 				</div>
 			</div>
+		</div>
+		<div class="footer-spacer">
+
 		</div>
 	</div>
 </body>
