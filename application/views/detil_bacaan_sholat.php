@@ -3,6 +3,7 @@
 <head>
 	<title>AlSujud</title>
 </head>
+<link rel="icon" href="<?= base_url('assets/img/logo_qr.jpg') ?>" sizes="16x16">
 <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
 <style type="text/css">
 	body{
