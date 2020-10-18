@@ -140,7 +140,7 @@
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="menu-item">
-						Dzikir Pagi dan Petang
+						Dzikir Pagi
 					</div>
 				</div>
 			</div>
@@ -152,11 +152,11 @@
 				</div>
 			</div>
 		</div>
-		<a href="<?= base_url('detil_dzikir/1/'.$token) ?>">
+		<a href="<?= base_url('detil_dzikir/2/'.$token) ?>">
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="menu-item">
-						Dzikir Pagi dan Petang
+						Dzikir Petang
 					</div>
 				</div>
 			</div>
@@ -168,7 +168,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="<?= base_url('detil_dzikir/2/'.$token) ?>">
+		<a href="<?= base_url('detil_dzikir/3/'.$token) ?>">
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="menu-item">
