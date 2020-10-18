@@ -9,6 +9,10 @@
 	  font-family: Lora;
 	  src: url(<?= base_url('assets/font/') ?>Lora.ttf);
 	}
+	@font-face {
+	  font-family: Centabel;
+	  src: url(<?= base_url('assets/font/') ?>Centabel.ttf);
+	}
 	body{
 		background-color: #313e28;
 		color: #313e28;
@@ -30,8 +34,10 @@
 		text-align: center;
 		background-color: #fff;
 		border-radius: 0.5em;
-		padding: 1em 0em;
+		padding: 0.4em 0em;
 		margin: 0em 3em;
+		font-family: Centabel;
+		font-size: 1.2em;
 	}
 	a{
 		text-decoration: none;
@@ -243,7 +249,9 @@
 					<div>alsujud.com</div>
 				</div>
 				<div class="col-6 compass-icon">
-					<span><img src="<?= base_url('assets/img/compass.png') ?>"></span>
+					<a href="<?= base_url('kiblat/'.$token) ?>" title="">
+						<span><img src="<?= base_url('assets/img/compass.png') ?>"></span>
+					</a>
 				</div>
 			</div>
 		</div>
