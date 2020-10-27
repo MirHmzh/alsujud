@@ -36,7 +36,7 @@
 		background-color: #fff;
 		border-radius: 0.5em;
 		padding: 0.4em 0em;
-		margin: 0em 3em;
+		margin: 0.5em 3em;
 		font-family: Centabel;
 		font-size: 1.2em;
 	}
@@ -116,7 +116,7 @@
 		position: relative;
 		padding: 1.4em 1em;
 		left: 10%;
-		top: 40%;
+		top: 25%;
 		border-radius: 0.3em;
 	}
 	.menu-icon img{
