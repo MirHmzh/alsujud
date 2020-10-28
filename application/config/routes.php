@@ -55,6 +55,5 @@ $route['generator'] = 'QRGenerator/index';
 $route['(:any)'] = 'Main';
 $route['(:any)/(:any)'] = 'Main/$1';
 $route['(:any)/(:any)/(:any)'] = 'Main/$1/$2';
-// $route['(:any)/(:any)'] = 'Main/$1/$2';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

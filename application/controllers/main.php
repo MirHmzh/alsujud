@@ -12,12 +12,36 @@ class Main extends CI_Controller {
 		}else if($this->uri->segment(2)){
 			$this->data['token'] = $this->uri->segment(2);
 		}else{
-			if($this->uri->segment(1) != 'token123'){
-				redirect('/marketing');
-			}else{
+			if($this->isTokenValid($this->uri->segment(1)) || $this->uri->segment(1) == 'tokenalsujud'){
 				$this->data['token'] = $this->uri->segment(1);
+			}else{
+				redirect('/marketing');
 			}
 		}
+	}
+
+	function isTokenValid($val)
+	{
+		$val = base64_decode($val, FALSE);
+		if ($val) {
+			$year = substr($val, 0, 4);
+			$string = substr($val, 5, 7);
+			$month = substr($val, 13, 2);
+			$date = substr($val, 15, 2);
+			$prodnum = substr($val, 18, 3);
+			if (
+				(strlen($year) == 4 &&
+				$string == 'alsujud' &&
+				$month <= 12 &&
+				$date <= 31 &&
+				strlen($prodnum) == 3) || $val == 'tokenalsujud'
+			) {
+				return TRUE;
+			}
+		}else{
+			return FALSE;
+		}
+
 	}
 
 	public function index()

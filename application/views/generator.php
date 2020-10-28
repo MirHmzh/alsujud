@@ -98,25 +98,10 @@
 	}
 </style>
 <body>
-	<!-- <div class="row navbar">
-		<div class="col-6">
-			<a href="<?= base_url('juz_amma') ?>" title="">
-				<img src="<?= base_url('assets/img/back.png') ?>" id="back" style="width: 1em" alt="">
-			</a>
-		</div>
-		<div class="col-6">
-			<span id="pause" style="display: none;">
-				<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">
-			</span>
-			<span id="play">
-				<img src="<?= base_url('assets/img/volume.png') ?>" style="width: 1em;" alt="">
-			</span>
-		</div>
-	</div> -->
 	<div class="content-wrapper">
 		<br><br>
 		<div class="row justify-content-center">
-			<input type="text" value="2020-alsujud/1006-001" id="teks-enkripsi" class="form-control" placeholder="Masukkan Kode Unik">
+			<input type="text" value="" id="teks-enkripsi" class="form-control" placeholder="Masukkan Kode Unik">
 		</div>
 		<br>
 		<div class="row justify-content-center">
@@ -145,6 +130,9 @@
 <script src="<?= base_url('assets/js/bootstrap.min.js') ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?= base_url('assets/js/qrcode.min.js') ?>" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
+	let date = new Date();
+	let code = `${date.getFullYear()}-alsujud/${date.getMonth() < 9 ? '0'+(date.getMonth()+1) : date.getMonth()+1}${date.getDate()}-001`;
+	$('#teks-enkripsi').val(code);
 	$('#generate-qr').click(() => {
 		$('#qrcode').html('');
 		$('#teks-url').text('<?= base_url() ?>');
