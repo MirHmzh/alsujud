@@ -135,7 +135,7 @@
 	$('#teks-enkripsi').val(code);
 	$('#generate-qr').click(() => {
 		$('#qrcode').html('');
-		$('#teks-url').text('<?= base_url() ?>');
+		$('#teks-url').text('<?= base_url() ?>'+code);
 		let qrcode = new QrCodeWithLogo({
 	        canvas: document.getElementById("canvas"),
 	        content: $('#teks-url').val(),
