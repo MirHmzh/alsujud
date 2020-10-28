@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'Main';
 $route['marketing'] = 'Marketing';
+$route['generator'] = 'QRGenerator/index';
 $route['(:any)'] = 'Main';
 $route['(:any)/(:any)'] = 'Main/$1';
 $route['(:any)/(:any)/(:any)'] = 'Main/$1/$2';
