@@ -40,6 +40,8 @@
 	.ayat-wrapper{
 		color: #e2e797;
 		margin: 2em 2em 2em 2em;
+		border-bottom: 2px solid #e2e797;
+		padding-bottom: 1em;
 	}
 	.ayat{
 		text-align: right;

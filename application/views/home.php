@@ -35,7 +35,7 @@
 		text-align: center;
 		background-color: #fff;
 		border-radius: 0.5em;
-		padding: 0.4em 0em;
+		padding: 0.9em 0em;
 		margin: 0.5em 3em;
 		font-family: Centabel;
 		font-size: 1.2em;
@@ -107,20 +107,20 @@
 		position: relative;
 		width: 101%;
 		left: -0.5%;
-		border-radius: 11% 11% 10% 10% / 11% 11% 0% 0%;
-		padding: 1em 0em 2em 0em;
+		border-radius: 15% 15% 10% 10% / 11% 11% 0% 0%;
+		padding: 3em 0em 3em 0em;
 		/*display: none;*/
 	}
 	.menu-icon{
 		background-color: #313e28;
 		position: relative;
-		padding: 1.4em 1em;
-		left: 10%;
-		top: 25%;
+		padding: 1.5em 0.3em;
+		left: 12%;
+		top: 40%;
 		border-radius: 0.3em;
 	}
 	.menu-icon img{
-		width: 2em;
+		width: 2.8em;
 	}
 	.flower-wrapper{
 		opacity: 23%;
@@ -157,8 +157,8 @@
 	.compass-icon img{
 		width: 3em;
 	}
-	.footer-spacer{
-		height: 5em;
+	.menu-item-wrapper .col-12{
+		margin-top: -2.2em;
 	}
 </style>
 <body>
@@ -255,9 +255,6 @@
 					</a>
 				</div>
 			</div>
-		</div>
-		<div class="footer-spacer">
-
 		</div>
 	</div>
 </body>

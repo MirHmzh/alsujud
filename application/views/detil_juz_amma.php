@@ -34,7 +34,7 @@
 		position: sticky;
 		top: 0;
 	}
-	#play{
+	#next{
 		float: right;
 	}
 	.ayat-wrapper{
@@ -86,12 +86,15 @@
 			</a>
 		</div>
 		<div class="col-6">
-			<span id="pause" style="display: none;">
+			<!-- <span id="pause" style="display: none;">
 				<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">
-			</span>
+			</span> -->
 			<span id="play">
-				<img src="<?= base_url('assets/img/volume.png') ?>" style="width: 1em;" alt="">
+				<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">
 			</span>
+			<a id="next" href="<?= base_url('juz_amma/'.$token) ?>" title="">
+				<img src="<?= base_url('assets/img/next.png') ?>" id="back" style="width: 1em" alt="">
+			</a>
 		</div>
 	</div>
 	<div class="content-wrapper">
@@ -132,11 +135,13 @@
 	let audio = [];
 	let format = [];
 	let sound;
-	let play;
+	let play = false;
 	let order;
 	let html = '';
 	let seek;
 	let soundId;
+	let pause = false;
+	let stopped = true;
 
 	String.prototype.toIndiaDigits= function(){
 	 var id= ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
@@ -184,35 +189,94 @@
 	.always(function(e) {
 		// alert(JSON.stringify(e));
 	});
-	$('#pause').click(() => {
-		if (sound.playing()) {
-			$('#pause').html('<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">');
-	    	sound.pause();
-			seek = sound.seek(soundId);
-		}else{
-			$('#pause').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
-			soundId = sound.play();
-	    	sound.seek(seek, soundId);
-		}
-		// return sound.playing() ? sound.pause() : autoplay(order, audio);
-	});
+	// $('#pause').click(() => {
+	// 	if (sound.playing()) {
+	// 		$('#pause').html('<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">');
+	//     	sound.pause();
+	// 		seek = sound.seek(soundId);
+	// 	}else{
+	// 		$('#pause').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
+	// 		soundId = sound.play();
+	//     	sound.seek(seek, soundId);
+	// 	}
+	// 	// return sound.playing() ? sound.pause() : autoplay(order, audio);
+	// });
 	$('#play').click(() => {
-		if (play) {
-			$('#pause').hide();
-			$('#play').html('<img src="<?= base_url('assets/img/volume.png') ?>" style="width: 1em;" alt="">');
-			sound.unload();
-			play = false;
-		}
-		else{
-			$('#pause').show();
-			$('#play').html('<img src="<?= base_url('assets/img/stop.png') ?>" style="width: 1em;" alt="">');
-			$('#pause').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
+		if (stopped && pause == false) {
+			$('#play').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
 			autoplay(0, audio);
+			stopped = false;
+			console.log('play');
+			console.log('stopped '+stopped);
+			console.log('pause '+stopped);
 		}
+
+		else if (pause == false && stopped == false) {
+			$('#play').html('<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">');
+			sound.pause();
+			seek = sound.seek(soundId);
+			pause = true;
+			stopped = true;
+			console.log('pause');
+			console.log('stopped '+stopped);
+			console.log('pause '+stopped);
+		}
+
+		else if (pause && stopped) {
+			$('#play').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
+			soundId = sound.play();
+		    sound.seek(seek, soundId);
+		    stopped = false;
+		    pause = false;
+		    console.log('replay');
+		    console.log('stopped '+stopped);
+			console.log('pause '+stopped);
+		}
+
+
+		// if (play) {
+		// 	// $('#pause').hide();
+		// 	console.log('pause');
+		// 	$('#play').html('<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">');
+		// 	// sound.unload();
+		// 	sound.pause();
+		// 	seek = sound.seek(soundId);
+		// 	play = false;
+		// 	pause = true;
+		// }
+		// else{
+		// 	// $('#pause').show();
+		// 	console.log('play');
+		// 	$('#play').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
+		// 	// $('#pause').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
+		// 	// autoplay(0, audio);
+		// 	if (pause) {
+		// 		soundId = sound.play();
+		//     	sound.seek(seek, soundId);
+		//     	pause = true;
+		//     	play = false;
+		//     	console.log('play 2');
+		// 	}else{
+		// 		autoplay(0, audio);
+		// 		pause = true;
+		// 		play = false;
+		// 		console.log('play 3');
+		// 	}
+		// }
+		// if (play) {
+		// 	$('#pause').html('<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">');
+	 //    	sound.pause();
+		// 	seek = sound.seek(soundId);
+		// }else{
+		// 	$('#pause').html('<img src="<?= base_url('assets/img/pause.png') ?>" style="width: 1em;" alt="">');
+		// 	soundId = sound.play();
+	 //    	sound.seek(seek, soundId);
+		// }
 	});
 
 	function autoplay(i, list) {
 	    play = true;
+	    pause = false;
 	    order = i;
 	    sound = new Howl({
 	        src: [list[i]],
@@ -222,8 +286,10 @@
 	            if ((i + 1) == list.length) {
 	                play = false;
 	                $('#pause').hide();
-					$('#play').html('<img src="<?= base_url('assets/img/volume.png') ?>" style="width: 1em;" alt="">');
+					$('#play').html('<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">');
 					play = false;
+					stopped = true;
+					paused = false;
 	                return true;
 	            } else {
 	                autoplay(i + 1, list)
