@@ -92,9 +92,15 @@
 			<span id="play">
 				<img src="<?= base_url('assets/img/play.png') ?>" style="width: 1em;" alt="">
 			</span>
-			<a id="next" href="<?= base_url('juz_amma/'.$token) ?>" title="">
-				<img src="<?= base_url('assets/img/next.png') ?>" id="back" style="width: 1em" alt="">
-			</a>
+			<?php if ($surat > 79): ?>
+				<a id="next" href="<?= base_url('detil_juz_amma/'.($surat+1)."/".$token) ?>" title="">
+					<img src="<?= base_url('assets/img/next.png') ?>" id="back" style="width: 1em" alt="">
+				</a>
+			<?php else: ?>
+				<a id="next" href="" title="">
+					&nbsp;
+				</a>
+			<?php endif ?>
 		</div>
 	</div>
 	<div class="content-wrapper">
