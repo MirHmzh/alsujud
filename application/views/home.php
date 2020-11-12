@@ -115,8 +115,8 @@
 		background-color: #313e28;
 		position: relative;
 		padding: 1.5em 0.3em;
-		left: 12%;
-		top: 40%;
+		left: 3em;
+		top: 3.5em;
 		border-radius: 0.3em;
 	}
 	.menu-icon img{
