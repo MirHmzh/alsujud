@@ -149,7 +149,8 @@
 	}
 	.brand-footer div{
 		position: relative;
-		bottom: -2em;
+		bottom: -2.5em;
+		font-size: 0.8em;
 	}
 	.compass-icon{
 		text-align: right;
