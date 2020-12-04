@@ -53,15 +53,7 @@
 	}
 </style>
 <body>
-	<div class="menu-wrapper">
-		<div class="row justify-content-center">
-			<div class="col-12">
-				<div class="menu-item">
-					Beli Sajadahnyaaaa
-				</div>
-			</div>
-		</div>
-	</div>
+	<img style="width: 100vw;" src="<?= base_url('assets/img/marketing.png') ?>" alt="">
 </body>
 <script src="<?= base_url('assets/js/jquery.min.js') ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?= base_url('assets/js/bootstrap.min.js') ?>" type="text/javascript" charset="utf-8"></script>
