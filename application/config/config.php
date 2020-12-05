@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -24,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'https://alsujud.herokuapp.com';
-$config['base_url'] = 'http://alsujud.com';
+$config['base_url'] = 'https://alsujud.com';
 
 /*
 |--------------------------------------------------------------------------
