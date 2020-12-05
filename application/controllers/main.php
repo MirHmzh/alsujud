@@ -203,10 +203,10 @@ class Main extends CI_Controller {
 				$this->data['sound'] = base_url('assets/audio/dzikir_petang.m4a');
 				break;
 			case 3:
-				$this->data['lafadz'] = 'بِسْمِكَ اللّهُمَّ اَحْيَا وَ بِسْمِكَ اَمُوْتُ';
-				$this->data['arti'] = 'Dengan nama-Mu ya Allah aku hidup, dan dengan nama-Mu aku mati';
-				$this->data['judul'] = 'Doa Sebelum Tidur';
-				$this->data['sound'] = base_url('assets/audio/tidur.m4a');
+				$this->data['lafadz'] = 'اٰمَنَ الرَّسُوۡلُ بِمَاۤ اُنۡزِلَ اِلَيۡهِ مِنۡ رَّبِّهٖ وَ الۡمُؤۡمِنُوۡنَ‌ؕ كُلٌّ اٰمَنَ بِاللّٰهِ وَمَلٰٓٮِٕكَتِهٖ وَكُتُبِهٖ وَرُسُلِهٖ ۚ لَا نُفَرِّقُ بَيۡنَ اَحَدٍ مِّنۡ رُّسُلِهٖ‌ ۚ وَقَالُوۡا سَمِعۡنَا وَاَطَعۡنَا‌ ۖ غُفۡرَانَكَ رَبَّنَا وَاِلَيۡكَ الۡمَصِيۡرُa<br>لَا يُكَلِّفُ اللّٰهُ نَفۡسًا اِلَّا وُسۡعَهَا ‌ؕ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا اكۡتَسَبَتۡ‌ؕ رَبَّنَا لَا تُؤَاخِذۡنَاۤ اِنۡ نَّسِيۡنَاۤ اَوۡ اَخۡطَاۡنَا ‌ۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَاۤ اِصۡرًا كَمَا حَمَلۡتَهٗ عَلَى الَّذِيۡنَ مِنۡ قَبۡلِنَا ‌‌ۚرَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهٖ‌ ۚ وَاعۡفُ عَنَّا وَاغۡفِرۡ لَنَا وَارۡحَمۡنَا ۚ اَنۡتَ مَوۡلٰٮنَا فَانۡصُرۡنَا عَلَى الۡقَوۡمِ الۡكٰفِرِيۡنَ<br>بِاسْمِكَ رَبِّيْ وَضَعْتُ جَنْبِيْ، وَبِكَ أَرْفَعُهُ، فَإِنْ أَمْسَكْتَ نَفْسِيْ فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِيْنَ';
+				$this->data['arti'] = 'Rasul (Muhammad) beriman kepada apa yang diturunkan kepadanya (Al-Quran) dari Tuhannya, demikian pula orang-orang yang beriman. Semua beriman kepada Allah, malaikat-malaikat-Nya, kitab-kitab-Nya dan rasul-rasul-Nya. (Mereka berkata), "Kami tidak membeda-bedakan seorang pun dari rasul-rasul-Nya." Dan mereka berkata, "Kami dengar dan kami taat. Ampunilah kami Ya Tuhan kami, dan kepada-Mu tempat (kami) kembali.<br>"Allah tidak membebani seseorang melainkan sesuai dengan kesanggupannya. Dia mendapat (pahala) dari (kebajikan) yang dikerjakannya dan dia mendapat (siksa) dari (kejahatan) yang diperbuatnya. (Mereka berdoa), "Ya Tuhan kami, janganlah Engkau hukum kami jika kami lupa atau kami melakukan kesalahan. Ya Tuhan kami, janganlah Engkau bebani kami dengan beban yang berat sebagaimana Engkau bebankan kepada orang-orang sebelum kami. Ya Tuhan kami, janganlah Engkau pikulkan kepada kami apa yang tidak sanggup kami memikulnya. Maafkanlah kami, ampunilah kami, dan rahmatilah kami. Engkaulah pelindung kami, maka tolonglah kami menghadapi orang-orang kafir."<br>Dengan nama-Mu Ya Allah, aku berbaring (di atas tempat tidur), dan dengan nama-Mu aku bangkit darinya. Bila Engkau menggenggam jiwaku, maka ampunila ia; dan bila Engkau melepasnya, jagalah ia dengan apa Engkau menjaga hamba-hamba-Mu yang beriman.';
+				$this->data['judul'] = 'Dzikir Menjelang Tidur';
+				$this->data['sound'] = base_url('assets/audio/dzikir_malam.m4a');
 				break;
 
 			default:
